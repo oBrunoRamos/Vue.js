@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./vue.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <div>
+            <div>
+                <input @keyup="ativar" type="text">
+            </div>
+            <br>
+            <div>
+                <input @keyup.up="ativar" type="text">
+            </div>
+            <br>
+            <div>
+                <input @keydown="ativar" type="text">
+            </div>
+            <br>
+            <div>
+                <input @keyup.enter="ativar" type="text">
+            </div>
+            <br>
+            <div>
+                <input @keyup.esc="ativar" type="text">
+            </div>
+        </div>
+        <div>
+            <div>
+                <p @click="ativar">Clique</p>          
+            </div>
+            <br>
+            <div>
+                <p @click.alt="ativar">Clique ALT</p>
+            </div>
+            <br>
+            <div>
+                <p @click.right="ativar">Clique ESQUERDO</p>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            ola
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div>
+                <p @click.middle="ativar">Clique MEIO</p>       
+            </div>
+        </div>
+        
+        
+    </div>
+</body>
+<script>
+    const vm = new Vue({
+        el: '#app',
+        data:{
+            totalScroll: 0,
+        },
+        methods:{
+            ativar(){
+                console.log('ativou');
+            },
+            handleScroll(){
+                this.totalScroll = window.scrollY
+                console.log(this.totalScroll);
+            }
+        },
+        created(){
+            window.addEventListener("scroll", this.handleScroll)
+        }
+    })
+</script>
+</html>

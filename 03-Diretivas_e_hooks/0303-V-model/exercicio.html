@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./vue.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+  1 - Crie um criador de botões.
+
+  O usuário poderá definir:
+  width,
+  height,
+  font-size,
+  font-family,
+  text-align,
+  background,
+  color,
+  border-radius,
+
+  As escolhas serão feitas em campos de
+  formulário. Cada escolha deverá ser 
+  refletida em um elemento (o botão).
+
+
+  2 - Crie um formulário com, nome, email, telefone e mensagem.
+  Ao clicar em enviar, as informações preenchidas no formulário
+  devem aparecer abaixo do mesmo. (previna o comportamento padrão do botão enviar)
+ -->
+
+    <div id="app" style="display: flex; flex-flow:column; ">
+        <div>
+            <h1>Crie o botão</h1>
+            <label for="width">Largura</label>                  <input v-model.number="largura" name="width" type="text">
+            <label for="height">Altura</label>                  <input v-model.number="altura" name="height" type="text">
+            <label for="fontSize">Tamanho da fonte</label>      <input v-model.number="tamanhoFonte" name="fontSize" type="text">
+            <label for="fonte">Fonte</label>
+            <select name="fonte" id="" v-model="tipoFonte">
+                <option disabled value="">Selecione a fonte</option>
+                <option value="arial">Arial</option>
+                <option value="monospace">Monospace</option>
+                <option value="serif">Serif</option>
+            </select>
+            <label for="textAlign">Alinhamento de texto</label> 
+            <div >
+                <input v-model="alinhamento" name="start" value="start" type="radio"> <label for="start">Inicio</label>
+                <input v-model="alinhamento" name="center" value="center" type="radio"> <label for="center">Centro</label>
+                <input v-model="alinhamento" name="end" value="end" type="radio"> <label for="end">Final</label>
+            </div>
+            
+
+            <label for="background">Fundo</label>
+            <div>
+                <input v-model="corFundo" type="color"> 
+            </div>
+            <label for="fonte">Fonte</label>
+            <select name="fonte" id="" v-model="corFonte">
+                <option disabled value="">Selecione a cor fonte</option>
+                <option value="blue">blue</option>
+                <option value="white">white</option>
+                <option value="pink">pink</option>
+            </select>
+            <label for="raius">borda</label><input v-model.number="radius" name="raius" type="text">
+            <div>
+                <button :style="{
+                    width: this.largura + 'px',
+                    height: this.altura + 'px',
+                    fontSize: this.tamanhoFonte + 'px',
+                    fontFamily: this.tipoFonte,
+                    textAlign: this.alinhamento,
+                    background: this.corFundo,
+                    color: this.corFonte,
+                    borderRadius: this.radius + 'px'
+                }"> Botão </button>
+            </div>
+        
+        </div>
+       <hr>
+        <div style="display: flex; flex-flow:column; ">
+            <label for="nome">Nome</label> <input name="nome" id="nome" v-model.trim="nome" type="text">
+            <label for="email">email</label> <input name="email" id="email" v-model.trim="email" type="text">
+            <label for="telefone">telefone</label> <input name="telefone" id="telefone" v-model.number="telefone" type="text">
+            <label for="mensagem">mensagem</label> <textarea name="mensagem" id="mensagem" v-model="mensagem"></textarea>
+
+                <button @click.once="ativar = !ativar"> Enviar</button>
+                <div v-show="ativar">
+                    {{nome}}
+                    {{email}}
+                    {{telefone}}
+                    {{mensagem}}
+                </div>
+        </div>
+
+    </div>
+</body>
+<script>
+    const vm = new Vue({
+        el: '#app',
+        data:{
+            largura: '',
+            altura: '',
+            tamanhoFonte: '',
+            tipoFonte: '',
+            alinhamento: '',
+            corFundo: '',
+            corFonte: '',
+            radius: '',
+
+            ativar: false,
+            nome: '',
+            email: '',
+            telefone: '',
+            mensagem: ''
+
+        }
+    })
+</script>
+
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./vue.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        {{total}}
+        <ul>
+            <li v-for="carro in carrosAzuis">{{carro.marca}}</li>
+        </ul>
+        <p>{{contador}}</p>
+        <button @click="contador++">Add</button>
+        <button @click="contador--">remove</button>
+    </div>
+    
+</body>
+<script>
+    const vm = new Vue({
+        el: '#app',
+        data:{
+            preco: 59,
+            desconto: 10,
+            carros:[
+                {
+                    marca: "VW",
+                    cor: "Azul"
+                },
+                {
+                    marca: "Ford",
+                    cor: "Preto"
+                },
+                {
+                    marca: "Tesla",
+                    cor: "Azul"
+                }
+            ],
+            contador: 0
+            
+        },
+        computed:{
+            total(){
+                return 'R$ ' + (this.preco - this.desconto)
+            },
+            carrosAzuis(){
+                const filtro = this.carros.filter( ({cor}) => cor === 'Azul')
+                return filtro
+            }
+        },
+        watch:{
+            contador(valorNovo, valorAntigo){
+                // if(document.body.style.background == 'black'){
+                //     document.body.style.background = 'blue'
+                // }else{
+                //     document.body.style.background = 'black'
+                // }
+            },
+        }
+        
+    })
+</script>
+</html>

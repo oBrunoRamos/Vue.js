@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./vue.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">
+        <div style="background: pink;">
+            <input type="text" v-model="nome1">
+            <textarea v-model="mensagem1" name="" id="" cols="30" rows="10"></textarea>
+            {{nome1}}
+            {{mensagem1}}
+        </div>
+        <hr>
+         <div style="background: blue;">
+            <input type="text" v-model.lazy="nome">
+            <input type="email" :value="email">
+            {{nome2}}
+            {{email2}}
+            
+        </div>
+        <hr>
+        <div style="background: red;">
+            <input type="checkbox" v-model="receberEmail">receberEmail
+            {{receberEmail3}}
+        </div>
+        <hr>
+        <div :style="{background: cor3}">
+            <input type="radio" v-model="cor3" value="blue"> Azul
+            <input type="radio" v-model="cor3" value="green"> Verde
+            <input type="radio" v-model="cor3" value="red"> vermelho
+            {{cor}}
+        </div>
+        <hr>
+        <div>
+            <select v-model="selecionado">
+                <option disabled value="">Selecionae uma fruta</option>
+                <option value="banana">banana</option>
+                <option value="morango">morango</option>
+                <option value="uva">uva</option>
+            </select>
+            {{selecionado}}
+        </div>
+        
+    </div>
+</body>
+<script>
+    const vm = new Vue({
+        el: '#app',
+        data:{
+            nome: '',
+            mensagem: '',
+            email: '',
+            receberEmail: '',
+            cor3: '',
+            selecionado: ''
+        }
+    })
+</script>
+</html>
