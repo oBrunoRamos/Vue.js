@@ -1,0 +1,30 @@
+{
+    "id": "smartphone",
+    "nome": "Smartphone",
+    "preco": 1299,
+    "descricão": "Etimologicamente, a palavra “discriminação” está associada à ideia de fazer distinção com base em etnia, raça, gênero, idade, nacionalidade, orientação sexual, condição social, religião ou, ainda, em razão de deficiência.",
+    "estoque": 12,
+    "img": "./api/produtos/smartphone-foto.jpg",
+    "avaliacoes": [
+        {
+            "nome": "Marcela",
+            "estrelas": 5,
+            "descrição": "gostei muito do produto, atendeu todas as minhas necessidades"
+        },
+        {
+            "nome": "Marcela",
+            "estrelas": 5,
+            "descrição": "gostei muito do produto, atendeu todas as minhas necessidades"
+        },
+        {
+            "nome": "Marcela",
+            "estrelas": 5,
+            "descrição": "gostei muito do produto, atendeu todas as minhas necessidades"
+        },
+        {
+            "nome": "Marcela",
+            "estrelas": 5,
+            "descrição": "gostei muito do produto, atendeu todas as minhas necessidades"
+        }
+    ]
+}

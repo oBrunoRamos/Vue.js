@@ -1,0 +1,30 @@
+{
+    "id": "tablet",
+    "nome": "Tablet",
+    "preco": 899,
+    "descricão": "Etimologicamente, a palavra “discriminação” está associada à ideia de fazer distinção com base em etnia, raça, gênero, idade, nacionalidade, orientação sexual, condição social, religião ou, ainda, em razão de deficiência.",
+    "estoque": 12,
+    "img": "./api/produtos/tablet-foto.jpg",
+    "avaliacoes": [
+        {
+            "nome": "Joel",
+            "estrelas": 5,
+            "descrição": "gostei muito do produto, atendeu todas as minhas necessidades"
+        },
+        {
+            "nome": "Joel",
+            "estrelas": 5,
+            "descrição": "gostei muito do produto, atendeu todas as minhas necessidades"
+        },
+        {
+            "nome": "Joel",
+            "estrelas": 5,
+            "descrição": "gostei muito do produto, atendeu todas as minhas necessidades"
+        },
+        {
+            "nome": "Joel",
+            "estrelas": 5,
+            "descrição": "gostei muito do produto, atendeu todas as minhas necessidades"
+        }
+    ]
+}

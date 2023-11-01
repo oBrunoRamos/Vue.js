@@ -25,10 +25,12 @@
     -->
 
     <div id="app">
-        {{dados}}
-        <br>
-        <br>
-        <br>
+
+       
+        <ul>
+            <li v-for="(dado, chave) in dados">{{chave}}: {{dado}}</li>
+        </ul>
+
         <button @click="contador++">Total: {{contador}}</button>
     </div>
 </body>

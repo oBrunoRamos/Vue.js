@@ -1,0 +1,30 @@
+{
+    "id": "smartwatch",
+    "nome": "Smartwatch",
+    "preco": 2999,
+    "descricão": "Etimologicamente, a palavra “discriminação” está associada à ideia de fazer distinção com base em etnia, raça, gênero, idade, nacionalidade, orientação sexual, condição social, religião ou, ainda, em razão de deficiência.",
+    "estoque": 12,
+    "img": "./api/produtos/smartwatch-foto.jpg",
+    "avaliacoes": [
+        {
+            "nome": "sergio",
+            "estrelas": 5,
+            "descrição": "gostei muito do produto, atendeu todas as minhas necessidades"
+        },
+        {
+            "nome": "sergio",
+            "estrelas": 5,
+            "descrição": "gostei muito do produto, atendeu todas as minhas necessidades"
+        },
+        {
+            "nome": "sergio",
+            "estrelas": 5,
+            "descrição": "gostei muito do produto, atendeu todas as minhas necessidades"
+        },
+        {
+            "nome": "sergio",
+            "estrelas": 5,
+            "descrição": "gostei muito do produto, atendeu todas as minhas necessidades"
+        }
+    ]
+}
