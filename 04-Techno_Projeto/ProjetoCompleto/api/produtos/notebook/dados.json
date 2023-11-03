@@ -1,30 +1,20 @@
 {
-    "id": "notebook",
-    "nome": "notebook",
-    "preco": 2999,
-    "descricão": "Etimologicamente, a palavra “discriminação” está associada à ideia de fazer distinção com base em etnia, raça, gênero, idade, nacionalidade, orientação sexual, condição social, religião ou, ainda, em razão de deficiência.",
-    "estoque": 12,
-    "img": "./api/produtos/notebook-foto.jpg",
-    "avaliacoes": [
-        {
-            "nome": "Fabio",
-            "estrelas": 5,
-            "descrição": "gostei muito do produto, atendeu todas as minhas necessidades"
-        },
-        {
-            "nome": "Fabio",
-            "estrelas": 5,
-            "descrição": "gostei muito do produto, atendeu todas as minhas necessidades"
-        },
-        {
-            "nome": "Fabio",
-            "estrelas": 5,
-            "descrição": "gostei muito do produto, atendeu todas as minhas necessidades"
-        },
-        {
-            "nome": "Fabio",
-            "estrelas": 5,
-            "descrição": "gostei muito do produto, atendeu todas as minhas necessidades"
-        }
-    ]
+  "id": "notebook",
+  "nome": "Notebook",
+  "preco": 2999,
+  "descricao": "Todas estas questões, devidamente ponderadas, levantam dúvidas sobre se a necessidade de renovação processual causa impacto indireto na reavaliação do orçamento setorial.",
+  "estoque": 12,
+  "img": "./api/produtos/notebook/notebook-foto.jpg",
+  "reviews": [
+    {
+      "nome": "Fábio",
+      "estrelas": 5,
+      "descricao": "Gostei muito do produto, atendeu todas as minhas necessidades"
+    },
+    {
+      "nome": "Fábio",
+      "estrelas": 5,
+      "descricao": "Gostei muito do produto, atendeu todas as minhas necessidades"
+    }
+  ]
 }

@@ -1,30 +1,20 @@
 {
-    "id": "speaker",
-    "nome": "Speaker",
-    "preco": 899,
-    "descricão": "Etimologicamente, a palavra “discriminação” está associada à ideia de fazer distinção com base em etnia, raça, gênero, idade, nacionalidade, orientação sexual, condição social, religião ou, ainda, em razão de deficiência.",
-    "estoque": 12,
-    "img": "./api/produtos/speaker-foto.jpg",
-    "avaliacoes": [
-        {
-            "nome": "Natalia",
-            "estrelas": 5,
-            "descrição": "gostei muito do produto, atendeu todas as minhas necessidades"
-        },
-        {
-            "nome": "Natalia",
-            "estrelas": 5,
-            "descrição": "gostei muito do produto, atendeu todas as minhas necessidades"
-        },
-        {
-            "nome": "Natalia",
-            "estrelas": 5,
-            "descrição": "gostei muito do produto, atendeu todas as minhas necessidades"
-        },
-        {
-            "nome": "Natalia",
-            "estrelas": 5,
-            "descrição": "gostei muito do produto, atendeu todas as minhas necessidades"
-        }
-    ]
+  "id": "speaker",
+  "nome": "Speaker",
+  "preco": 599,
+  "descricao": "Todas estas questões, devidamente ponderadas, levantam dúvidas sobre se a necessidade de renovação processual causa impacto indireto na reavaliação do orçamento setorial.",
+  "estoque": 3,
+  "img": "./api/produtos/speaker/speaker-foto.jpg",
+  "reviews": [
+    {
+      "nome": "Rogério",
+      "estrelas": 5,
+      "descricao": "Gostei muito do produto, atendeu todas as minhas necessidades."
+    },
+    {
+      "nome": "Nathália",
+      "estrelas": 4,
+      "descricao": "Gostei, mas o preço poderia ser melhor."
+    }
+  ]
 }
