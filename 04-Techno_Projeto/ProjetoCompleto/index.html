@@ -11,10 +11,12 @@
     <div id="app">
 
 
-        <ul>
-            <li v-for="(produto, chave) in produtos">{{chave}}: {{produto}}</li>
-        </ul>
-
+        <section class="produtos">
+            <div v-for="produto in produtos" class="produtos">
+                <img :src="produto.img" alt="">
+                {{produto}}
+            </div>
+        </section>
 
 
 
