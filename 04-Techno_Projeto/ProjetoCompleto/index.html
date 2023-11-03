@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,12 +11,25 @@
     <div id="app">
 
 
-        <ul>
-            <li v-for="(produto, chave) in produtos">{{chave}}: {{produto}}</li>
-        </ul>
+        <section class='modal' v-if='produto'>
+            <div class='modal_container'>
+                <div class="modal_img">
+                    <img  :src="produto.img" :alt="produto.nome" />
+                </div>
+                div              
+            </div>
+        </section>
+        
 
-
-
+        <section class="produtos">
+            <div v-for="item in produtos" @click='fetchProdutoUnico(item.id)' :key="item.id" class="produto">
+                <img :src="item.img" :alt="item.nome" class="produto_img" />
+                <div class="produto_info">  
+                    <span class="produto_preco">{{item.preco | numeroPreco}}</span>
+                    <h2 class="produto_titulo">{{item.nome}}</h2>
+                </div>
+            </div>
+        </section>
 
 
 
