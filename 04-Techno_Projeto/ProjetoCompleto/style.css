@@ -44,6 +44,84 @@
 
 /* Modal */
 
+  .modal::before{
+    content: '';
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    height: 100vh;
+    width: 100vw;
+    background: rgba(0, 0, 0, .5 );
+  }
+
   .modal{
-    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    padding: 80px;
+  }
+
+  .modal_container{
+    position: relative;
+    background: linear-gradient(to right, transparent 250px, white 250px);
+    z-index: 1;
+    display: grid;
+    grid-gap: 50px;
+    align-items: end;
+    padding:  50px 50px 50px 0;
+  }
+
+  .modal_img{
+    grid-column: 1;
+    box-shadow: 0px 3px 4px rgba(0, 0, 0, .1), 0px 4px 10px rgba(0, 0, 0, .2);
+  }
+  .modal_img img{
+    max-width: 300px;
+    display: block;
+  }
+  .modal_dados{
+    max-width: 600px;
+    grid-column: 2;
+  }
+
+  .modal_titulo{
+    font-size: 3rem;
+
+  }
+  .modal_btn{
+    margin-top: 80px;
+    background: #000;
+    cursor: pointer;
+    color: #fff;
+    border: none;
+    font-size: 1rem;
+    padding: 10px 25px;
+    font-family: "Arial", "sans-serif";
+  }
+  .modal_btn:active{
+    background: #808080;
+  }
+
+/* avaliações */
+  .avaliacoes{
+    grid-column: 2;
+  }
+  .avaliacao{
+    border-bottom: 1px solid rgba(0, 0, 0, .3);
+    padding-bottom: 20px;
+  }
+  .avaliacao_subtitulo{
+    font-size: 1.75rem;
+  }
+
+  .avaliacao_descricao{
+    color: rgba(0, 0, 0, .7);
+    margin: 5px 0px;
+  }
+  .avaliacao_usuario{
+    font-weight: bold;
   }

@@ -1,39 +1,33 @@
 const vm = new Vue({
     el: "#app",
-    data:{
-        produtos:[],
+    data: {
+        produtos: [],
         produto: false,
     },
-    created(){
+    created() {
         this.fetchProdutos()
     },
-    filters:{
-        numeroPreco(valor){
+    filters: {
+        numeroPreco(valor) {
             //return `R$ ${valor},00`
-            return valor.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'});
+            return valor.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
         },
         
     },
-    methods:{
-        fetchProdutos(){
+    methods: {
+        fetchProdutos() {
             fetch("./api/produtos.json")
                 .then(r => r.json())
                 .then(r => {
                     this.produtos = r
                 })
         },
-        fetchProdutoUnico(id){
+        fetchProdutoUnico(id) {
             fetch(`./api/produtos/${id}/dados.json`)
-            .then(r => r.json())
-                .then(r => {
-                    this.produto = r
-                })
-            },
-        
+                .then(r => r.json())
+                .then(r => { this.produto = r })
+  
+        },
     },
-    
-
-
-
 
 })
