@@ -16,11 +16,24 @@
                 <div class="modal_img">
                     <img  :src="produto.img" :alt="produto.nome" />
                 </div>
-                div              
+                <div class="modal_dados">
+                    <span class="modal_preco">{{produto.preco}}</span>
+                    <h2 class="modal_titulo">{{produto.nome}}</h2> 
+                    <p>{{produto.descricao}}</p>
+                    <button class="modal_btn">Adcionar Item</button>
+                </div>
+                <div class="avaliacoes">
+                    <h2 class="avaliacoes_subtitulo">Avaliações</h2>
+                    <ul>
+                        <li v-for="avaliacao in produto.avaliacoes">
+                            <p>{{avaliacao.descricao}}</p>
+                            <p>{{}} | {{}}</p>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </section>
         
-
         <section class="produtos">
             <div v-for="item in produtos" @click='fetchProdutoUnico(item.id)' :key="item.id" class="produto">
                 <img :src="item.img" :alt="item.nome" class="produto_img" />
@@ -30,10 +43,6 @@
                 </div>
             </div>
         </section>
-
-
-
-
 
     </div>    
     <script src="./app.js"></script>
