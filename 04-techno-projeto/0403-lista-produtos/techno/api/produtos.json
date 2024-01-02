@@ -11,7 +11,7 @@
     "preco": 1299,
     "img": "./api/produtos/smartphone/smartphone.jpg"
   },
-  {
+  {  
     "id": "tablet",
     "nome": "Tablet",
     "preco": 899,

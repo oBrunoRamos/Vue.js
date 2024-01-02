@@ -1,3 +1,6 @@
+@import './animacoes.css';
+@import './resposivo.css';
+
 .alerta{
       position: absolute;
       top: 20px;
